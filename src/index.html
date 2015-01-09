@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app="cvApp">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+
+    <!-- Is it CSS?-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="static/css/cv.css"/>
+
+    <!-- or is it JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <!-- Have we included all? -->
+</head>
+<body>
+
+<article class="jmpress" ng-controller="SectionController">
+
+    <section class="" id="overview" data-x="0" data-y="0" data-scale="2">
+    </section>
+
+    <section id="home">
+        <div class="row">
+            <div class="col-md-7">
+                <img src="http://placehold.it/150x150"/>
+            </div>
+            <div class="col-md-5">
+                <h1 class="scaling">Name &nbsp;&nbsp;DasName</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="iama" data-y="400">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <h4>IAmA:</h4>
+                </div>
+
+                <div class="row skill-container">
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-10">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                full stack developer
+                                <span class="badge">soa</span>
+                                <span class="badge">javascript</span>
+                                <span class="badge">java</span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                freelancer
+                                <span class="badge">MySQL</span>
+                                <span class="badge">jQuery</span>
+                                <span class="badge">Laravel</span>
+                                <span class="badge">php</span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                software enthusiast
+                                <span class="badge">no-sql</span>
+                                <span class="badge">camel</span>
+                                <span class="badge">angular</span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                internship coordinator
+                                <span class="badge">spring</span>
+                                <span class="badge">design patterns</span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                web development teacher
+                                <span class="badge">js</span>
+                                <span class="badge">css3</span>
+                                <span class="badge">html5</span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                amateur security auditor
+                                <span class="badge">csrf</span>
+                                <span class="badge">sql</span>
+                                <span class="badge">xss</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h4 class="pull-right">playing with...</h4>
+                </div>
+                <div class="row playing-with">
+                    <p>
+                        best-practices
+                        <b>scalability</b>
+                        design patterns
+
+                        business logic - service oriented architecture <b>modularity</b>
+                        event-driven architecture
+                        security <i>REST </i>API's -
+                        UI/UX - data modeling
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</article>
+
+
+<script type="text/javascript" src="static/vendor/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="static/vendor/jmpress/jmpress.custom.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/cv.js"></script>
+
+
+</body>
+</html>

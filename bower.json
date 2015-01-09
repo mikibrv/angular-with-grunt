@@ -1,0 +1,21 @@
+{
+    "name": "cv",
+    "version": "0.0.0",
+    "homepage": "https://github.com/mikibrv/cv",
+    "authors": [
+        "Miki"
+    ],
+    "description": "my personal",
+    "main": "src/index.html",
+    "moduleType": [
+        "amd"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

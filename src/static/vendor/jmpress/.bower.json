@@ -1,0 +1,21 @@
+{
+  "name": "jmpress",
+  "version": "0.4.5",
+  "main": [
+    "./jmpress.js"
+  ],
+  "dependencies": {
+    "jquery": "~1.7.2"
+  },
+  "homepage": "https://github.com/jmpressjs/dist",
+  "_release": "0.4.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.5",
+    "commit": "cbf476f8d6d609ae29ff50c2f2b4e296ab8e21d4"
+  },
+  "_source": "git://github.com/jmpressjs/dist.git",
+  "_target": "~0.4.5",
+  "_originalSource": "jmpress",
+  "_direct": true
+}
