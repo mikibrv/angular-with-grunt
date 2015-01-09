@@ -23,8 +23,7 @@
             },
             presentationMode: {
                 notesUrl: 'index.notes.html'
-            },
-            setActive: setActive
+            }
         };
 
 
