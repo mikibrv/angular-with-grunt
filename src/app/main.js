@@ -1,3 +1,6 @@
+/**
+ *
+ */
 require.config({
     baseUrl: "app",
     //ceva

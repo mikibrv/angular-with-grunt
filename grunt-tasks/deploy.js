@@ -4,7 +4,7 @@
 module.exports = function (grunt) {
     grunt.registerTask('deploy', function (env) {
         grunt.task.run([
-            'env:' + env,
+            'setenv:' + env,
             "clean",
             'jshint',
             'copy:static',

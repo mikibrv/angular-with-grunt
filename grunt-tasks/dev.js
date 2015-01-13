@@ -3,9 +3,17 @@
  */
 module.exports = function (grunt) {
 
+    grunt.config('setenv', {
+        dev: {
+            options: {
+                envFolder: "grunt-tasks/env"
+            }
+        }
+    });
+
     grunt.registerTask('build', function (env) {
         grunt.task.run([
-            'env:dev',
+            'setenv:dev',
             "clean",
             'less',
             'copy'
@@ -14,7 +22,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('dev', function (env) {
         grunt.task.run([
-            'env:dev',
+            'setenv:dev',
             'build',
             'watch'
         ]);
@@ -23,7 +31,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', function (env) {
         grunt.task.run([
-            'env:dev',
+            'setenv:dev',
             'build',
             'connect',
             'watch'
