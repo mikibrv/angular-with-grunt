@@ -1,3 +1,4 @@
 {
-    "NODE_ENV": "production"
+    "type": "deployment",
+    "root": "deploy/<%=pkg.name%>-<%=pkg.version%>"
 }

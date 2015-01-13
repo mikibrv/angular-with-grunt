@@ -14,7 +14,6 @@
             }
         };
 
-
         var config = {
             stepSelector: 'section',
             viewPort: {

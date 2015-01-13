@@ -9,9 +9,8 @@ module.exports = function (grunt) {
                 reporter: require('jshint-stylish')
             },
             files: {
-                src: ['app/static/**.js']
+                src: ['src/static/js/**/*.js', 'src/app/**/*.js']
             }
         }
     });
-    grunt.registerTask('code-hint', ["jshint"]);
 };
