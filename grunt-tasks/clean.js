@@ -5,6 +5,7 @@
 module.exports = function (grunt) {
     grunt.config('clean', {
         main: ["<%=env.root%>"],
-        tmp: ['.tmp']
+        tmp: ['.tmp'],
+        css: ['src/static/css']
     });
 };

@@ -1,7 +1,11 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <!--External CSS -->
     <!-- build:css static/css/vendor.min.css -->
@@ -12,17 +16,29 @@
 
     <!--Custom CSS -->
     <!-- build:css static/css/bundle.min.css -->
-    <link rel="stylesheet" href="static/css/another.css">
-    <link rel="stylesheet" href="static/css/cv.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/common/header.css">
     <!-- endbuild -->
 
 </head>
 <body>
+<div class="container">
+    <div class="row" ng-include="'app/common/header.html'">
 
-<div ng-controller="GreetingController">
-    {{ greeting }}
+    </div>
+
+    <div class="row">
+        <div class="span12 ui-view-container">
+            <div ui-view class="slideup"></div>
+        </div>
+    </div>
+
+
+    <div class="row" ng-include="'app/common/footer.html'">
+
+    </div>
 </div>
-<div class="main-viewer" ng-view></div>
+
 
 <!-- process:js app/app.js -->
 <script type="text/javascript" data-main="app/main.js" src="static/vendor/requirejs/require.js"></script>

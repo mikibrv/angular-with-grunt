@@ -39,3 +39,35 @@
 
 </body>
 </html>
+
+
+angular.module('exceptionOverride', []).factory('$exceptionHandler', function() {
+return function(exception, cause) {
+exception.message += ' (caused by "' + cause + '")';
+throw exception;
+};
+});
+angular.module('myApp', [])
+.controller('myController',
+function ($scope) {
+var err = new Error("I'm a new error")
+err.stack = removeAngularTrace(err.stack)
+$scope.stack = err.stack
+
+$scope.makeErr = function () {
+throw err;
+};
+
+function removeAngularTrace(stack) {
+var arr = stack.split('\n'),
+index = arr.length;
+while (index) {
+index -= 1;
+if (arr[index].toLowerCase().indexOf('angular') > -1) {
+arr.splice(index, 1);
+}
+}
+return arr.join("\n");
+}
+}
+);

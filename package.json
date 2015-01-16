@@ -42,7 +42,7 @@
     "grunt-newer": "^1.1.0",
     "grunt-processhtml": "^0.3.3",
     "grunt-release": "^0.10.0",
-    "grunt-set-env": "^0.1.0",
+    "grunt-set-env": "^0.1.3",
     "grunt-usemin": "^3.0.0",
     "jshint-stylish": "^1.0.0",
     "load-grunt-config": "^0.16.0",

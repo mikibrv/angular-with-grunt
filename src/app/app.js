@@ -1,17 +1,42 @@
-define(function (require) {
+(function () {
     'use strict';
-    require('jQuery');
-    var angular = require('angular');
-    var angularRouter = require('angularUIRouter');
+    var dependencies = [
+        'angular',
+        'home/home-ctrl',
+        'about/about-module',
+        'bootstrap',
+        'jmpress',
+        'angular-ui-router',
+        'angular-animate'
+    ];
 
-    var app = angular.module('myApp', []);
 
-    app.controller('GreetingController', ['$scope', function($scope) {
-        $scope.greeting = 'Hola!';
-    }]);
+    define(dependencies, function (angular, HomeController, aboutModule) {
 
-    app.init = function () {
-        angular.bootstrap(document, ['myApp']);
-    };
-    return app;
-});
+        var app = angular.module('myApp', ['ui.router','ngAnimate', aboutModule.moduleName]);
+        app.init = function () {
+            angular.bootstrap(document, ['myApp']);
+        };
+
+        app.controller("HomeCtrl", HomeController);
+
+
+        app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+            $urlRouterProvider.otherwise('/');
+            $urlRouterProvider.when("", '/');
+
+            $locationProvider
+                .hashPrefix('!');
+
+            $stateProvider
+                .state('home', {
+                    url: "/",
+                    controller: "HomeCtrl",
+                    templateUrl: "app/home/home.html"
+                });
+        });
+
+
+        return app;
+    });
+}());

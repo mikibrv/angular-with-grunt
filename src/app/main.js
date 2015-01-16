@@ -6,18 +6,25 @@ require.config({
     //ceva
     paths: {
         'angular': '../static/vendor/angular/angular.min',
-        'angularUIRouter': '../static/vendor/angular-ui-router/release/angular-ui-router.min',
+        'angular-ui-router': '../static/vendor/angular-ui-router/release/angular-ui-router.min',
+        'angular-animate': '../static/vendor/angular-animate/angular-animate.min',
+
+        /* external non angular dependencies*/
 
         'jQuery': '../static/vendor/jquery/dist/jquery.min',
-        'bootstrap': '../static/vendor/bootstrap/dist/js/bootstrap.min'
+        'bootstrap': '../static/vendor/bootstrap/dist/js/bootstrap.min',
+        'jmpress': '../static/vendor/jmpress/jmpress',
+        'underscore': '../static/vendor/underscore/underscore-min'
     },
     shim: {
-        angularUIRouter: {
-            deps: ['angular'],
-            exports: 'angular'
+        'angular-ui-router': {
+            deps: ['angular']
         },
         angular: {
             exports: 'angular'
+        },
+        'angular-animate': {
+            deps: ['angular']
         },
 
         /* jQuery & BooStrap*/
@@ -27,6 +34,10 @@ require.config({
         bootstrap: {
             deps: ['jQuery'],
             exports: 'bootstrap'
+        },
+        jmpress: {
+            deps: ['jQuery', 'underscore'],
+            exports: 'jmpress'
         }
     }
 });

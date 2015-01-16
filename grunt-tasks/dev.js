@@ -4,10 +4,14 @@
 module.exports = function (grunt) {
 
     grunt.config('setenv', {
+        options: {
+            envFolder: "grunt-tasks/env"
+        },
         dev: {
-            options: {
-                envFolder: "grunt-tasks/env"
-            }
+
+        },
+        prod:{
+
         }
     });
 
@@ -40,7 +44,7 @@ module.exports = function (grunt) {
 
     grunt.config("watch", {
         less: {
-            files: ['src/static/css/**/*.less'],
+            files: ['src/static/**/*.less'],
             tasks: ['newer:less', 'copy:css'],
             options: {
                 livereload: true
@@ -48,7 +52,7 @@ module.exports = function (grunt) {
         },
         app: {
             files: ['src/app/**/*.js'],
-            tasks: ['newer:copy:app', 'newer:jshint'],
+            tasks: ['newer:copy:app'],
             options: {
                 livereload: true
             }
