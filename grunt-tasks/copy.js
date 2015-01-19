@@ -10,7 +10,8 @@ module.exports = function (grunt) {
                     /*  boostrap fonts and images*/
                     {expand: true, cwd: 'src/static/vendor/bootstrap/fonts', src: ['**'], dest: '<%=env.root%>/static/fonts'},
                 /** img stuff */
-                    {expand: true, cwd: 'src/static/img', src: ['**'], dest: '<%=env.root%>/static/img'}
+                    {expand: true, cwd: 'src/static/img', src: ['**'], dest: '<%=env.root%>/static/img'},
+                    {expand: true, cwd: 'src/app/', src: ['**/*.html'], dest: '<%=env.root%>/app/'}
                 ]
             },
             css: {

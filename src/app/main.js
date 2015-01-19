@@ -11,6 +11,7 @@ require.config({
 
         /* external non angular dependencies*/
 
+
         'jQuery': '../static/vendor/jquery/dist/jquery.min',
         'bootstrap': '../static/vendor/bootstrap/dist/js/bootstrap.min',
         'jmpress': '../static/vendor/jmpress/jmpress',

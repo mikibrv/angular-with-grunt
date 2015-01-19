@@ -1,10 +1,7 @@
 (function () {
     'use strict';
-    var dependencies = [
-        'jmpress'
-    ];
 
-    define(dependencies, function (jmpress) {
+    define(['jmpress'], function (jmpress) {
 
         var jmPress = function () {
             return {

@@ -1,6 +1,8 @@
 (function () {
     'use strict';
-    var dependencies = [
+
+
+    define([
         'angular',
         'home/home-ctrl',
         'about/about-module',
@@ -8,12 +10,9 @@
         'jmpress',
         'angular-ui-router',
         'angular-animate'
-    ];
+    ], function (angular, HomeController, aboutModule) {
 
-
-    define(dependencies, function (angular, HomeController, aboutModule) {
-
-        var app = angular.module('myApp', ['ui.router','ngAnimate', aboutModule.moduleName]);
+        var app = angular.module('myApp', ['ui.router', 'ngAnimate', aboutModule.moduleName]);
         app.init = function () {
             angular.bootstrap(document, ['myApp']);
         };

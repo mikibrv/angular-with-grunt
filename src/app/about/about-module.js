@@ -1,13 +1,12 @@
 (function () {
     'use strict';
-    var dependencies = [
+
+    define([
         'angular',
         'angular-ui-router',
         '../common/jmpress/jmpress.directive',
         'about/about-ctrl'
-    ];
-
-    define(dependencies, function (angular,angularUi,
+    ], function (angular,angularUi,
                                    jmpress, aboutCtrl) {
         var module = { moduleName: 'ui-about'};
         var about = angular.module(module.moduleName, []);

@@ -6,10 +6,13 @@ module.exports = function (grunt) {
     grunt.config('requirejs', {
         compile: {
             options: {
+                uglify2: {
+                    mangle: false
+                },
                 baseUrl: "src/app",
                 mainConfigFile: "src/app/main.js",
                 name: 'main',
-                optimize: "uglify2",
+                optimize: 'uglify2',
                 out: "<%=env.root%>/app/app.js",
                 replaceRequireScript: [
                     {
