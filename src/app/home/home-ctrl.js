@@ -4,10 +4,11 @@
 (function () {
     'use strict';
     define([], function () {
-        var HomeController = function ($scope) {
+        var HomeController = function ($scope, loginService) {
             $scope.welcome = "You are not authorized.";
+            loginService.showForm();
         };
 
-        return ["$scope", HomeController];
+        return ["$scope", "LoginService", HomeController];
     });
 }());

@@ -6,8 +6,7 @@
         'angular-ui-router',
         '../common/jmpress/jmpress.directive',
         'about/about-ctrl'
-    ], function (angular,angularUi,
-                                   jmpress, aboutCtrl) {
+    ], function (angular, angularUi, jmpress, aboutCtrl) {
         var module = { moduleName: 'ui-about'};
         var about = angular.module(module.moduleName, []);
 
@@ -29,6 +28,5 @@
 
         return module;
     });
-
 
 }());

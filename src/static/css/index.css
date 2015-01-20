@@ -1,5 +1,3 @@
-/* Mixin */
-/* Mixin */
 .gradients {
   background: #1e5799;
   /* Old browsers */
@@ -41,20 +39,56 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
   /* IE6-9 */
 }
-.jumbotron {
-  -webkit-border-radius: 20px 20px 0px 0px;
-  -moz-border-radius: 20px 20px 0px 0px;
-  border-radius: 20px 20px 0px 0px;
-  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-}
 #home {
-  margin-top: 20%;
+  min-height: 100px;
+  margin-top: 30%;
 }
-.ui-view-container {
-  position: relative;
-  min-height: 300px;
+#home .background-pic {
+  position: absolute;
+  top: -59px;
+  left: -56px;
+  opacity: 0.6;
+  z-index: -1;
+  width: 342px;
+  height: 171px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: url("../img/cloud-computing-background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#home .message {
+  -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 5px 2px 5px 20px;
+  cursor: pointer;
+  font-size: 1.9vw;
+}
+#home .message .glyphicon {
+  position: absolute;
+  left: 20px;
+}
+#home .message .glyphicon:hover {
+  color: orange;
+}
+#home .message p {
+  text-indent: 10px;
+  font-family: 'Special Elite', cursive;
+  margin: 0 0 0px;
 }
 .slideup {
   position: absolute;
@@ -65,16 +99,18 @@ body {
 }
 .slideup.ng-enter,
 .slideup.ng-leave {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
 }
 .slideup.ng-enter {
-  top: 100%;
+  opacity: 0;
+  top: 10%;
 }
 .slideup.ng-enter-active {
-  top: 0;
+  opacity: 1;
+  top: 0%;
 }
 .slideup.ng-leave {
   top: 0;

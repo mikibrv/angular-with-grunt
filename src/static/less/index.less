@@ -20,18 +20,42 @@ body {
   .gradients;
 }
 
-.jumbotron {
-  .border-radius-custom(20px, 20px, 0px, 0px);
-  .box-shadow(5px, 5px, 6px, 0.3);
-}
-
 #home {
-  margin-top: 20%;
-}
-
-.ui-view-container {
-  position: relative;
-  min-height: 300px;
+  min-height: 100px;
+  margin-top: 30%;
+  .background-pic {
+    position: absolute;
+    top: -59px;
+    left: -56px;
+    opacity: 0.6;
+    z-index: -1;
+    width: 342px;
+    height: 171px;
+    .border-radius(10px);
+    background: url("../img/cloud-computing-background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .box-shadow(10px 10px 5px 0px rgba(0, 0, 0, 0.75));
+  }
+  .message {
+    .glyphicon {
+      position: absolute;
+      left: 20px;
+      &:hover {
+        color: orange;
+      }
+    }
+    p {
+      text-indent: 10px;
+      font-family: 'Special Elite', cursive;
+      margin: 0 0 0px;
+    }
+    .box-shadow(10px 0px 5px 0px rgba(0, 0, 0, 0.75));
+    .border-radius(10px);
+    padding: 5px 2px 5px 20px;
+    cursor: pointer;
+    font-size: 1.9vw;
+  }
 }
 
 .slideup {
@@ -44,18 +68,17 @@ body {
 
 .slideup.ng-enter,
 .slideup.ng-leave {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  .transition(all 2s ease);
 }
 
 .slideup.ng-enter {
-  top: 100%;
+  opacity: 0;
+  top: 10%;
 }
 
 .slideup.ng-enter-active {
-  top: 0;
+  opacity: 1;
+  top: 0%;
 }
 
 .slideup.ng-leave {
