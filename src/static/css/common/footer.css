@@ -1,24 +1,20 @@
 footer {
-    position: fixed;
-    bottom: 0px;
-    left: 10px;
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
 }
-
 footer ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 footer ul li {
-    font-size: 1.9vw;
-    display: inline;
-    text-decoration: none;
-    font-family: 'Special Elite', cursive;
+  font-size: 1.9vw;
+  display: inline;
+  text-decoration: none;
+  font-family: 'Special Elite', cursive;
 }
-
 footer ul li a {
-    color: #000000;
+  color: #000000;
 }
-
 footer ul li a:hover {
-    color: orange;
+  color: orange;
 }

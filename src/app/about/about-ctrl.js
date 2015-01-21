@@ -5,7 +5,6 @@
     'use strict';
     define([], function () {
         var AboutCtrl = function ($scope, $http) {
-            $scope.data = "You are not authorized.";
 
         };
 

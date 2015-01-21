@@ -1,0 +1,36 @@
+#login-container {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+#login-container.ng-hide-add.ng-hide-add-active,
+#login-container.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+#login-container.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  top: -100px;
+}
+#login-container input {
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  padding: 0 10px;
+  margin-top: 3px;
+  width: 166px;
+  margin-bottom: 3px;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  color: orange;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+#login-container input:focus {
+  color: black;
+  letter-spacing: 2px;
+}
