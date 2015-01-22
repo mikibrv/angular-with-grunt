@@ -3,36 +3,67 @@
 
     <section class="cube" id="front" data-z="-1000" data-up="#top" data-down="#bottom">
         <span class="row">
-            <img class="col-xs-5" src="http://placehold.it/250x250"/>
-            <h1 class="col-xs-5">
+               <h1 class="col-xs-5">
                 <span class="firstname">
-                    Name
+                    test
                 </span>
 
                 <span class="surname">
-                    name
+                    test
                 </span>
 
-            </h1>
-             <span class="col-xs-1"></span>
+               </h1>
+            <span class="col-xs-5"></span>
         </span>
     </section>
 
-
     <section class="cube" id="right" data-rotate-y="90" data-z="-1500" data-x="500" data-up="#top" data-down="#bottom">
-        RIGHT
+        <img class="col-xs-5" src="http://placehold.it/250x250"/>
     </section>
     <section class="cube" id="back" data-rotate-y="180" data-z="-2000" data-up="#top" data-down="#bottom">
-        BACK
+        <img class="col-xs-5" src="http://placehold.it/250x250"/>
     </section>
     <section class="cube" id="left" data-rotate-y="270" data-z="-1500" data-x="-500" data-up="#top" data-down="#bottom">
-        LEFT
+        <img class="col-xs-5" src="http://placehold.it/250x250"/>
     </section>
     <section class="cube" id="top" data-rotate-x="90" data-z="-1500" data-y="-500" data-up="#back" data-down="#front">
-        TOP
+        <img class="col-xs-5" src="http://placehold.it/250x250"/>
     </section>
     <section class="cube" id="bottom" data-rotate-x="270" data-z="-1500" data-y="500" data-up="#front"
              data-down="#back">
-        BOTTOM
+        <img class="col-xs-5" src="http://placehold.it/250x250"/>
     </section>
+
+
+    <section id="center-front" class="center-cube" data-z="-1375" data-up="#top" data-down="#bottom">
+        <img src="{{ innerBoxImage }}"/>
+    </section>
+
+    <section id="center-right" class="center-cube" data-z="-1500" data-rotate-y="90" data-x="125" data-up="#top"
+             data-down="#bottom">
+        <img src="{{ innerBoxImage }}"/>
+    </section>
+
+    <section id="center-back" class="center-cube" data-rotate-y="180" data-z="-1625" data-up="#top" data-down="#bottom">
+        <img src="{{ innerBoxImage }}"/>
+    </section>
+
+
+    <section id="center-left" class="center-cube" data-rotate-y="270" data-x="-125"
+             data-z="-1500" data-up="#top" data-down="#bottom">
+        <img src="{{ innerBoxImage }}"/>
+    </section>
+
+    <section id="center-top" class="center-cube" data-z="-1500" data-rotate-x="90" data-y="-125" data-up="#top"
+             data-down="#bottom">
+        <img src="{{ innerBoxImage }}"/>
+    </section>
+
+
+    <section id="center-bottom" class="center-cube" data-z="-1500" data-rotate-x="270" data-y="125" data-up="#top"
+             data-down="#bottom">
+        <img src="{{ innerBoxImage }}"/>
+    </section>
+
+
 </article>

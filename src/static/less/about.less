@@ -1,21 +1,41 @@
+@import "mixins/mix-ins";
+
+.cube(@width, @height) {
+  width: @width;
+  height: @height;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 #about {
   .cube {
-    width: 1000px;
-    height: 1000px;
-
-    display: block;
-
+    border: 1px dashed rgb(127, 0, 0);
+    border: 1px dashed rgba(255, 0, 0, .5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    opacity: 0.1;
     padding: 2px;
+    &.active {
+      opacity: 1;
+    }
+    .cube(1000px, 1000px);
+  }
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+  .center-cube {
+    .cube(250px, 250px);
+    img {
+      width: 100%;
+      height: 100%;
+      // .border-radius(150px);
+    //  .box-shadow(0 0 8px rgba(0, 0, 0, .8));
+    }
   }
 
   #front {
-
     h1 {
       padding: 60px 0px 0px 60px;
       span {
@@ -27,6 +47,5 @@
         }
       }
     }
-
   }
 }

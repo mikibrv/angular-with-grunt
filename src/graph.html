@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <title>Network | Scale free network clustering</title>
+
+    <style type="text/css">
+
+    </style>
+
+    <script type="text/javascript" src="static/vendor/vis/dist/vis.js"></script>
+    <link href="static/vendor/vis/dist/vis.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript">
+        var nodes = null;
+        var edges = null;
+        var network = null;
+
+        function destroy() {
+            if (network !== null) {
+                network.destroy();
+                network = null;
+            }
+        }
+
+        function draw() {
+            destroy();
+
+            nodes = [];
+            edges = [];
+            var connectionCount = [];
+
+            // randomly create some nodes and edges
+            var nodeCount = 120;
+            for (var i = 0; i < nodeCount; i++) {
+                nodes.push({
+                    id: i,
+                    label: "M"
+                });
+
+                connectionCount[i] = 0;
+
+                // create edges in a scale-free-network way
+                if (i == 1) {
+                    var from = i;
+                    var to = 0;
+                    edges.push({
+                        from: from,
+                        to: to
+                    });
+                    connectionCount[from]++;
+                    connectionCount[to]++;
+                }
+                else if (i > 1) {
+                    var conn = edges.length * 2;
+                    var rand = Math.floor(Math.random() * conn);
+                    var cum = 0;
+                    var j = 0;
+                    while (j < connectionCount.length && cum < rand) {
+                        cum += connectionCount[j];
+                        j++;
+                    }
+
+                    var from = i;
+                    var to = j;
+                    edges.push({
+                        from: from,
+                        to: to
+                    });
+                    connectionCount[from]++;
+                    connectionCount[to]++;
+                }
+            }
+
+            // create a network
+            var clusteringOn = false;
+            var clusterEdgeThreshold = 10;
+            var container = document.getElementById('mynetwork');
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+            var options = {
+                style: 'surface',
+                showPerspective: true,
+                clustering: {
+                    enabled: clusteringOn,
+                    clusterEdgeThreshold: clusterEdgeThreshold
+                },
+                stabilize: false,
+                zoomable: false
+            };
+            network = new vis.Network(container, data, options);
+
+            // add event listeners
+            network.on('select', function (params) {
+                document.getElementById('selection').innerHTML = 'Selection: ' + params.nodes;
+            });
+        }
+    </script>
+</head>
+
+<body onload="draw();">
+
+<style>
+    #mynetwork {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #content {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        z-index: 10;
+    }
+</style>
+
+<div id="mynetwork"></div>
+<div id="content">
+    Content
+</div>
+
+</body>
+</html>

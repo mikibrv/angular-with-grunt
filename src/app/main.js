@@ -15,7 +15,8 @@ require.config({
         'jQuery': '../static/vendor/jquery/dist/jquery.min',
         'bootstrap': '../static/vendor/bootstrap/dist/js/bootstrap.min',
         'jmpress': '../static/vendor/jmpress/jmpress',
-        'underscore': '../static/vendor/underscore/underscore-min'
+        'underscore': '../static/vendor/underscore/underscore-min',
+        'vis': '../static/vendor/vis/dist/vis.min'
     },
     shim: {
         'angular-ui-router': {

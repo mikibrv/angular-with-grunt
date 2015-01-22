@@ -8,11 +8,12 @@
         'login/login-ctrl',
         'about/about-module',
         'services/login-service',
+        'common/vis/graph.directive',
         'bootstrap',
         'jmpress',
         'angular-ui-router',
         'angular-animate'
-    ], function (angular, HomeController, LoginCtrl, aboutModule, loginService) {
+    ], function (angular, HomeController, LoginCtrl, aboutModule, loginService, graphDirective) {
 
         var app = angular.module('myApp', ['ui.router', 'ngAnimate', aboutModule.moduleName]);
         app.init = function () {
@@ -20,6 +21,7 @@
         };
 
         app.service("LoginService", loginService);
+        app.directive('graphDirective', graphDirective);
         app.controller("HomeCtrl", HomeController);
         app.controller("LoginCtrl", LoginCtrl);
 
