@@ -101,22 +101,22 @@ body {
 }
 .slideup.ng-enter,
 .slideup.ng-leave {
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  -o-transition: all 2s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 .slideup.ng-enter {
   opacity: 0;
-  top: 10%;
+  top: 100%;
 }
 .slideup.ng-enter-active {
   opacity: 1;
-  top: 0%;
+  top: 0;
 }
 .slideup.ng-leave {
   top: 0;
-  display: none;
+  opacity: 0.1;
 }
 .slideup.ng-leave-active {
   top: -100%;

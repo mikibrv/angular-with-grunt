@@ -70,22 +70,22 @@ body {
 
 .slideup.ng-enter,
 .slideup.ng-leave {
-  .transition(all 2s ease);
+  .transition(all 1s ease);
 }
 
 .slideup.ng-enter {
   opacity: 0;
-  top: 10%;
+  top: 100%;
 }
 
 .slideup.ng-enter-active {
   opacity: 1;
-  top: 0%;
+  top: 0;
 }
 
 .slideup.ng-leave {
   top: 0;
-  display: none;
+  opacity: 0.1;
 }
 
 .slideup.ng-leave-active {
@@ -95,7 +95,7 @@ body {
 #graph {
   position: absolute;
   height: 300px;
-  width:300px;
+  width: 300px;
   bottom: 0;
   left: 0;
   right: 0;

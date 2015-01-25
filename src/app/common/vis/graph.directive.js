@@ -67,7 +67,7 @@
                 },
                 stabilize: false,
                 zoomable: false,
-                dragNetwork:false
+                dragNetwork: false
 
             };
             network = new vis.Network(container, data, options);
@@ -86,7 +86,7 @@
                 link: function ($scope, $element) {
                     $timeout(function () {
                         initDirective($element);
-                    }, 100);
+                    }, 500);
                 }
             };
         };

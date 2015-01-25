@@ -15,11 +15,10 @@
 
         about.directive('uiImpress', jmpress);
 
-
         about.config(function ($stateProvider, $urlRouterProvider) {
             $stateProvider
                 .state('about', {
-                    url: "/about",
+                    url: "/randomcube",
                     templateUrl: "app/about/about.html",
                     controller: "AboutCtrl"
                 });

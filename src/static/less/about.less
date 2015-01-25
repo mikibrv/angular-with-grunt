@@ -9,15 +9,41 @@
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+
+  border: 1px dashed rgb(127, 0, 0);
+  border: 1px dashed rgba(255, 0, 0, .5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+#cube-hint {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  right: 0;
+  font-size: 130%;
+  background-color: #aab6c2;
+  padding: 20px 10px;
+  text-align: center;
+  color: #333;
+  z-index: -99;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #about {
+
+  .cube-bg-color {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+  }
+
   .cube {
-    border: 1px dashed rgb(127, 0, 0);
-    border: 1px dashed rgba(255, 0, 0, .5);
-    -webkit-background-clip: padding-box; /* for Safari */
-    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-    opacity: 0.1;
+
+    opacity: 0.3;
     padding: 2px;
     &.active {
       opacity: 1;
@@ -31,21 +57,38 @@
       width: 100%;
       height: 100%;
       // .border-radius(150px);
-    //  .box-shadow(0 0 8px rgba(0, 0, 0, .8));
+      //  .box-shadow(0 0 8px rgba(0, 0, 0, .8));
     }
   }
+  /*colors*/
+  @brand-primary: darken(#428bca, 6.5%); // #337ab7
+  @brand-success: #5cb85c;
+  @brand-info: #5bc0de;
+  @brand-warning: #f0ad4e;
+  @brand-danger: #d9534f;
+  @brand-primary-second: #20B2AA;
 
-  #front {
-    h1 {
-      padding: 60px 0px 0px 60px;
-      span {
-        font-family: 'Special Elite', cursive;
-        font-size: 130px;
-        display: block;
-        &.surname {
-          text-indent: 60px;
-        }
-      }
-    }
+  .front-bg {
+    background-color: @brand-primary;
+  }
+
+  .left-bg {
+    background-color: @brand-info;
+  }
+
+  .right-bg {
+    background-color: @brand-success;
+  }
+
+  .top-bg {
+    background-color: @brand-warning;
+  }
+
+  .bottom-bg {
+    background-color: @brand-danger;
+  }
+
+  .back-bg {
+    background-color: @brand-primary-second;
   }
 }
