@@ -1,6 +1,5 @@
 @import "mixins/mix-ins";
-
-.gradients {
+.background-gradients {
   background: #1e5799; /* Old browsers */
   background: -moz-linear-gradient(top, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(16%, #207cca), color-stop(16%, #207cca), color-stop(50%, #2989d8), color-stop(100%, #7db9e8)); /* Chrome,Safari4+ */
@@ -10,86 +9,12 @@
   background: linear-gradient(to bottom, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0); /* IE6-9 */
 }
-
 html, body {
   height: 100%;
 }
-
 body {
   min-height: 100%;
-  .gradients;
-}
-
-#home {
-  z-index: 1;
-  min-height: 100px;
-  margin-top: 20%;
-  .background-pic {
-    position: absolute;
-    top: -59px;
-    left: -56px;
-    opacity: 0.6;
-    z-index: -1;
-    width: 342px;
-    height: 171px;
-    .border-radius(10px);
-    background: url("../img/cloud-computing-background.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    .box-shadow(10px 10px 5px 0px rgba(0, 0, 0, 0.75));
-  }
-  .message {
-    min-width: 170px;
-    .glyphicon {
-      position: absolute;
-      left: 20px;
-      &:hover {
-        color: orange;
-      }
-    }
-    p {
-      text-indent: 10px;
-      font-family: 'Special Elite', cursive;
-      margin: 0 0 0px;
-    }
-    .box-shadow(10px 0px 5px 0px rgba(0, 0, 0, 0.75));
-    .border-radius(10px);
-    padding: 5px 2px 5px 20px;
-    cursor: pointer;
-    font-size: 1.9vw;
-  }
-}
-
-.slideup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-}
-
-.slideup.ng-enter,
-.slideup.ng-leave {
-  .transition(all 1s ease);
-}
-
-.slideup.ng-enter {
-  opacity: 0;
-  top: 100%;
-}
-
-.slideup.ng-enter-active {
-  opacity: 1;
-  top: 0;
-}
-
-.slideup.ng-leave {
-  top: 0;
-  opacity: 0.1;
-}
-
-.slideup.ng-leave-active {
-  top: -100%;
+  .background-gradients;
 }
 
 #graph {

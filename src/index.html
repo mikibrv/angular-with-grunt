@@ -23,20 +23,18 @@
     <link rel="stylesheet" href="static/css/common/header.css"/>
     <link rel="stylesheet" href="static/css/common/footer.css"/>
     <link rel="stylesheet" href="static/css/about.css"/>
+    <link rel="stylesheet" href="static/css/cube.css"/>
     <link rel="stylesheet" href="static/css/common/login.css"/>
     <!-- endbuild -->
 
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
     <div class="row" ng-include="'app/common/header.html'">
 
     </div>
 
-    <div class="row">
-        <div class="span12">
-            <div ui-view class="slideup"></div>
-        </div>
+    <div ui-view id="ui-view">
     </div>
 
 
@@ -44,8 +42,6 @@
 
     </div>
 </div>
-
-
 
 
 <!-- process:js app/app.js -->

@@ -4,21 +4,17 @@
     define([
         'angular',
         'angular-ui-router',
-        '../common/jmpress/jmpress.directive',
         'about/about-ctrl'
-    ], function (angular, angularUi, jmpress, aboutCtrl) {
+    ], function (angular, angularUi, aboutCtrl) {
         var module = { moduleName: 'ui-about'};
         var about = angular.module(module.moduleName, []);
 
 
         about.controller("AboutCtrl", aboutCtrl);
-
-        about.directive('uiImpress', jmpress);
-
         about.config(function ($stateProvider, $urlRouterProvider) {
             $stateProvider
                 .state('about', {
-                    url: "/randomcube",
+                    url: "/about",
                     templateUrl: "app/about/about.html",
                     controller: "AboutCtrl"
                 });

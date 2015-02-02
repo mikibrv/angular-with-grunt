@@ -9,11 +9,12 @@
         'about/about-module',
         'services/login-service',
         'common/vis/graph.directive',
+        'common/jmpress/cube.directive',
         'bootstrap',
         'jmpress',
         'angular-ui-router',
         'angular-animate'
-    ], function (angular, HomeController, LoginCtrl, aboutModule, loginService, graphDirective) {
+    ], function (angular, HomeController, LoginCtrl, aboutModule, loginService, graphDirective, cube) {
 
         var app = angular.module('myApp', ['ui.router', 'ngAnimate', aboutModule.moduleName]);
         app.init = function () {
@@ -22,6 +23,7 @@
 
         app.service("LoginService", loginService);
         app.directive('graphDirective', graphDirective);
+        app.directive('impressCube', cube);
         app.controller("HomeCtrl", HomeController);
         app.controller("LoginCtrl", LoginCtrl);
 

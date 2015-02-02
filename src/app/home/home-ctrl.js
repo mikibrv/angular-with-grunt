@@ -6,7 +6,6 @@
     define([], function () {
         var HomeController = function ($scope, loginService) {
             $scope.welcome = "You are not authorized.";
-            loginService.showForm();
         };
 
         return ["$scope", "LoginService", HomeController];
