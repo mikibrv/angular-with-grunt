@@ -11,5 +11,5 @@ and dependency injection through requireJS are included. UI-Router is used as ro
 * jQuery( Plugins: jmpress, vis)
 * Less
 
-#Author
+##Author
 Csere Miklos

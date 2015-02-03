@@ -8,6 +8,8 @@
             var edges = [];
             var connectionCount = [];
 
+            var from,to;
+
             // randomly create some nodes and edges
             var nodeCount = 20;
             for (var i = 0; i < nodeCount; i++) {
@@ -20,8 +22,8 @@
 
                 // create edges in a scale-free-network way
                 if (i == 1) {
-                    var from = i;
-                    var to = 0;
+                    from = i;
+                    to = 0;
                     edges.push({
                         from: from,
                         to: to
@@ -39,8 +41,8 @@
                         j++;
                     }
 
-                    var from = i;
-                    var to = j;
+                    from = i;
+                    to = j;
                     edges.push({
                         from: from,
                         to: to

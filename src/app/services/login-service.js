@@ -26,7 +26,7 @@
             };
             this.registerForm = function (callback) {
                 this.observingForms.push(callback);
-            }
+            };
 
 
 

@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                 baseUrl: "src/app",
                 mainConfigFile: "src/app/main.js",
                 name: 'main',
-                optimize: 'uglify2',
+                optimize: 'none',//uglify2
                 out: "<%=env.root%>/app/app.js",
                 replaceRequireScript: [
                     {

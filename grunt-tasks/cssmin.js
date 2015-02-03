@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                     files: [
                         {
                             expand: true,
-                            cwd: '.tmp/static/css/',
+                            cwd: '.tmp/concat/static/css/',
                             src: ['bundle.css', '!*.min.css'],
                             dest: '<%=env.root%>/static/css',
                             ext: '.min.css'
