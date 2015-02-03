@@ -1,0 +1,69 @@
+#cube-wrapper {
+  display: none;
+  /*colors*/
+}
+#cube-wrapper .cube-bg-color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+#cube-wrapper .cube {
+  opacity: 0.3;
+  padding: 2px;
+  width: 1000px;
+  height: 1000px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #7f0000;
+  border: 1px dashed rgba(255, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box;
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+#cube-wrapper .cube.active {
+  opacity: 1;
+}
+#cube-wrapper .center-cube {
+  width: 250px;
+  height: 250px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #7f0000;
+  border: 1px dashed rgba(255, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box;
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+#cube-wrapper .center-cube img {
+  width: 100%;
+  height: 100%;
+}
+#cube-wrapper .front-bg {
+  background-color: #337ab7;
+}
+#cube-wrapper .left-bg {
+  background-color: #5bc0de;
+}
+#cube-wrapper .right-bg {
+  background-color: #5cb85c;
+}
+#cube-wrapper .top-bg {
+  background-color: #f0ad4e;
+}
+#cube-wrapper .bottom-bg {
+  background-color: #d9534f;
+}
+#cube-wrapper .back-bg {
+  background-color: #20b2aa;
+}

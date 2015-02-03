@@ -1,4 +1,4 @@
-.gradients {
+.background-gradients {
   background: #1e5799;
   /* Old browsers */
   background: -moz-linear-gradient(top, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%);
@@ -38,88 +38,6 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
   /* IE6-9 */
-}
-#home {
-  z-index: 1;
-  min-height: 100px;
-  margin-top: 20%;
-}
-#home .background-pic {
-  position: absolute;
-  top: -59px;
-  left: -56px;
-  opacity: 0.6;
-  z-index: -1;
-  width: 342px;
-  height: 171px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: url("../img/cloud-computing-background.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-#home .message {
-  min-width: 170px;
-  -webkit-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 5px 2px 5px 20px;
-  cursor: pointer;
-  font-size: 1.9vw;
-}
-#home .message .glyphicon {
-  position: absolute;
-  left: 20px;
-}
-#home .message .glyphicon:hover {
-  color: orange;
-}
-#home .message p {
-  text-indent: 10px;
-  font-family: 'Special Elite', cursive;
-  margin: 0 0 0px;
-}
-.slideup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-}
-.slideup.ng-enter,
-.slideup.ng-leave {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-.slideup.ng-enter {
-  opacity: 0;
-  top: 100%;
-}
-.slideup.ng-enter-active {
-  opacity: 1;
-  top: 0;
-}
-.slideup.ng-leave {
-  top: 0;
-  opacity: 0.1;
-}
-.slideup.ng-leave-active {
-  top: -100%;
 }
 #graph {
   position: absolute;

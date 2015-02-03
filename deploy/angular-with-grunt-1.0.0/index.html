@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+    <!--External CSS -->
+    <link rel="stylesheet" href="static/css/vendor.min.css">
+
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="static/css/bundle.min.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" ng-include="'app/common/header.html'">
+
+    </div>
+
+    <div ui-view id="ui-view">
+    </div>
+
+
+    <div class="row" ng-include="'app/common/footer.html'">
+
+    </div>
+</div>
+
+
+<script src="app/app.js"></script>
+
+
+</body>
+</html>
+
