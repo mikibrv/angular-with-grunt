@@ -18,9 +18,10 @@ define(['app', 'angular-mock'], function (app) {
             expect(app).toBeDefined();
         });
 
-        it ("Welcome message is:You are not authorized.", function () {
+        it("Welcome message is:You are not authorized.", function () {
             expect(scope.welcome).toBe("You are not authorized.");
         });
+
     });
 
 });

@@ -17,7 +17,7 @@ module.exports = function (config) {
             {pattern: 'src/**/*.js', included: false, served: true},
             {pattern: 'src/**/*.map', included: false, served: true},
             {pattern: 'node_modules/angular-mocks/angular-mocks.js', included: false, served: true},
-            {pattern: 'grunt-tasks/karma/*Spec.js', included: false, served: true},
+            {pattern: 'grunt-tasks/karma/**/*Spec.js', included: false, served: true},
             'grunt-tasks/karma/test-main.js'
         ],
 
