@@ -18,7 +18,7 @@
 
 #cube-wrapper {
 
-  display:none;
+  display: none;
 
   .cube-bg-color {
     position: absolute;
@@ -34,6 +34,7 @@
     &.active {
       opacity: 1;
     }
+
     .cube(1000px, 1000px);
   }
 
@@ -47,7 +48,7 @@
     }
   }
   /*colors*/
-  @brand-primary: darken(#428bca, 6.5%); // #337ab7
+  @brand-primary: #428bca; // #337ab7
   @brand-success: #5cb85c;
   @brand-info: #5bc0de;
   @brand-warning: #f0ad4e;
@@ -55,26 +56,26 @@
   @brand-primary-second: #20B2AA;
 
   .front-bg {
-    background-color: @brand-primary;
+    .gradient(@brand-primary, darken(@brand-primary,10%));
   }
 
   .left-bg {
-    background-color: @brand-info;
+    .gradient(@brand-info, darken(@brand-info, 20%));
   }
 
   .right-bg {
-    background-color: @brand-success;
+    .gradient(@brand-success, darken(@brand-success, 20%));
   }
 
   .top-bg {
-    background-color: @brand-warning;
+    .gradient(@brand-warning, darken(@brand-warning, 20%));
   }
 
   .bottom-bg {
-    background-color: @brand-danger;
+    .gradient(@brand-danger, darken(@brand-danger, 20%));
   }
 
   .back-bg {
-    background-color: @brand-primary-second;
+    .gradient(@brand-primary-second, darken(@brand-primary-second, 10%));
   }
 }
