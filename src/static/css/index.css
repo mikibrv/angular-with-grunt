@@ -1,41 +1,21 @@
-.background-gradients {
-  background: #1e5799;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%);
+/* latin */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(http://fonts.gstatic.com/s/specialelite/v6/9-wW4zu3WNoD5Fjka35JmzxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+  height: 100vh;
+  background: -webkit-linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #d38312 10%, #a83279 90%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(16%, #207cca), color-stop(16%, #207cca), color-stop(50%, #2989d8), color-stop(100%, #7db9e8));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%);
+  background: -ms-linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #d38312 10%, #a83279 90%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #1e5799 0%, #207cca 16%, #207cca 16%, #2989d8 50%, #7db9e8 100%);
+  background: linear-gradient(90deg, #d38312 10%, #a83279 90%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
-  /* IE6-9 */
-}
-html,
-body {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-  background-color: #1e5799;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e5799), to(#7db9e8));
-  background: -webkit-linear-gradient(top, #1e5799, #7db9e8);
-  background: -moz-linear-gradient(top, #1e5799, #7db9e8);
-  background: -ms-linear-gradient(top, #1e5799, #7db9e8);
-  background: -o-linear-gradient(top, #1e5799, #7db9e8);
-}
-#graph {
-  position: absolute;
-  height: 300px;
-  width: 300px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.5;
-  overflow: visible;
 }

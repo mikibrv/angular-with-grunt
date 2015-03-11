@@ -63,6 +63,15 @@
   opacity: @opacity;
 }
 
+.gradient(@angle,@startColor,@endColor) {
+
+  background: -webkit-linear-gradient(@angle, @startColor, @endColor); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(@angle, @startColor, @endColor); /* FF3.6+ */
+  background: -ms-linear-gradient(@angle, @startColor, @endColor); /* IE10 */
+  background: -o-linear-gradient(@angle, @startColor, @endColor); /* Opera 11.10+ */
+  background: linear-gradient(@angle, @startColor, @endColor); /* W3C */
+}
+
 .gradient (@startColor: #eee, @endColor: white) {
   background-color: @startColor;
   background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));

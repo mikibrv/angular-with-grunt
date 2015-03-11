@@ -7,8 +7,6 @@
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-
     <!--External CSS -->
     <!-- build:css static/css/vendor.min.css -->
     <link rel="stylesheet" href="static/vendor/bootstrap/dist/css/bootstrap.min.css">
@@ -22,25 +20,19 @@
     <link rel="stylesheet" href="static/css/index.css"/>
     <link rel="stylesheet" href="static/css/common/header.css"/>
     <link rel="stylesheet" href="static/css/common/footer.css"/>
-    <link rel="stylesheet" href="static/css/about.css"/>
     <link rel="stylesheet" href="static/css/cube.css"/>
     <link rel="stylesheet" href="static/css/login.css"/>
+    <link rel="stylesheet" href="static/css/home.css"/>
     <!-- endbuild -->
 
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row" ng-include="'app/common/header.html'">
+<div id="page-wrapper" class="container-fluid">
+
+    <div ui-view>
 
     </div>
 
-    <div ui-view id="ui-view">
-    </div>
-
-
-    <div class="row" ng-include="'app/common/footer.html'">
-
-    </div>
 </div>
 
 

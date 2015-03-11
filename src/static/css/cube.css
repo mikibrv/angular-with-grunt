@@ -97,3 +97,13 @@
   background: -ms-linear-gradient(top, #20b2aa, #188781);
   background: -o-linear-gradient(top, #20b2aa, #188781);
 }
+#graph {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  overflow: visible;
+}
