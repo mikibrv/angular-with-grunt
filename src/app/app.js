@@ -39,8 +39,12 @@
                 .hashPrefix('!');
 
             $stateProvider
-                .state('home', {
-                    url: "/",
+                .state('home',{
+                    url:"/",
+                    template:""
+                })
+                .state('about', {
+                    url: "/about",
                     controller: "HomeCtrl",
                     templateUrl: "app/home/home.html"
                 })

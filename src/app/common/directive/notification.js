@@ -13,7 +13,7 @@
                         element.remove();
                     }, 5000);
                 }
-            }
+            };
         };
         return ["$timeout", Notification];
     });
