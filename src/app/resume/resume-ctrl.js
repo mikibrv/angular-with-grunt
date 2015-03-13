@@ -4,13 +4,13 @@
 (function () {
     'use strict';
     define([], function () {
-        var projectsCtrl = function ($scope, $http) {
+        var resumeCtrl = function ($scope, $http) {
 
             $scope.innerBoxImage = "static/img/software-dev.jpg";
 
         };
 
 
-        return ["$scope", "$http", projectsCtrl];
+        return ["$scope", "$http", resumeCtrl];
     });
 }());

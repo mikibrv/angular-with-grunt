@@ -6,7 +6,7 @@
         'angular',
         'home/home-ctrl',
         'login/login-ctrl',
-        'projects/projects-module',
+        'resume/resume-module',
         'services/login-service',
         'common/vis/graph.directive',
         'common/jmpress/cube.directive',
@@ -15,9 +15,10 @@
         'bootstrap',
         'angular-ui-router',
         'angular-animate'
-    ], function (angular, HomeController, LoginCtrl, projectsModule, loginService, graphDirective, cube, aboutSlider, notification) {
+    ], function (angular, HomeController, LoginCtrl, resumeModule, loginService, graphDirective,
+                 cube, aboutSlider, notification) {
 
-        var app = angular.module('myApp', ['ui.router', 'ngAnimate', projectsModule.moduleName]);
+        var app = angular.module('myApp', ['ui.router', 'ngAnimate', resumeModule.moduleName]);
         app.init = function () {
             angular.bootstrap(document, ['myApp']);
         };
@@ -30,18 +31,17 @@
         app.controller("HomeCtrl", HomeController);
         app.controller("LoginCtrl", LoginCtrl);
 
-
         app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-            $urlRouterProvider.otherwise('home');
+            $urlRouterProvider.otherwise('about');
             $urlRouterProvider.when("", '/');
 
             $locationProvider
                 .hashPrefix('!');
 
             $stateProvider
-                .state('home',{
-                    url:"/",
-                    template:""
+                .state('home', {
+                    url: "/",
+                    template: ""
                 })
                 .state('about', {
                     url: "/about",
@@ -51,7 +51,8 @@
                 .state('cube', {
                     url: "/cube",
                     templateUrl: "app/cube/cube.html"
-                });
+                })
+            ;
         });
 
 

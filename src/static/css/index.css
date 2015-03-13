@@ -8,14 +8,41 @@
 }
 body {
   height: 100vh;
-  background: -webkit-linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  background: -webkit-linear-gradient(190deg, #d38312 10%, #a83279 90%);
   /* Chrome 10+, Saf5.1+ */
-  background: -moz-linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  background: -moz-linear-gradient(190deg, #d38312 10%, #a83279 90%);
   /* FF3.6+ */
-  background: -ms-linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  background: -ms-linear-gradient(190deg, #d38312 10%, #a83279 90%);
   /* IE10 */
-  background: -o-linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  background: -o-linear-gradient(190deg, #d38312 10%, #a83279 90%);
   /* Opera 11.10+ */
-  background: linear-gradient(90deg, #d38312 10%, #a83279 90%);
+  background: linear-gradient(190deg, #d38312 10%, #a83279 90%);
   /* W3C */
+}
+.fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.fade.ng-enter {
+  opacity: 0;
+}
+.fade.ng-enter-active {
+  opacity: 1;
+}
+.fade.ng-leave {
+  opacity: 1;
+}
+.fade.ng-leave-active {
+  opacity: 0;
 }
