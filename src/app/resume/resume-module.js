@@ -23,9 +23,58 @@
                     templateUrl: "app/resume/nested/contact.html",
                     controller: "ResumeCtrl"
                 })
+                .state('resume.it-knowledge', {
+                    url: "/technical-knowledge",
+                    templateUrl: "app/resume/nested/it-knowledge.html",
+                    controller: "ResumeCtrl"
+                })
+                .state('resume.experience', {
+                    url: "/experience",
+                    templateUrl: "app/resume/nested/experience.html",
+                    controller: "ResumeCtrl"
+                })
+                .state('resume.ebooking', {
+                    url: "/ebooking",
+                    templateUrl: "app/resume/nested/exp-ebooking.html"
+                })
+                .state('resume.abcroisiere', {
+                    url: "/abcroisiere",
+                    templateUrl: "app/resume/nested/exp-abcroisiere.html"
+                })
+                .state('resume.internships', {
+                    url: "internship-coordinator",
+                    templateUrl: "app/resume/nested/exp-internships.html"
+                })
+                .state("resume.teacher", {
+                    url: "web-development-teacher",
+                    templateUrl: "app/resume/nested/exp-teaching.html"
+                })
+                .state("resume.freelancer", {
+                    url: "freelancer",
+                    templateUrl: "app/resume/nested/exp-freelancer.html"
+                })
+                .state("resume.tech", {
+                    url: "tech-support",
+                    templateUrl: "app/resume/nested/aol.html"
+                })
+                .state('resume.knowledge-sharing', {
+                    url: "/knowledge-sharing",
+                    templateUrl: "app/resume/nested/ks.html",
+                    controller: "ResumeCtrl"
+                })
+                .state('resume.education', {
+                    url: "/education",
+                    templateUrl: "app/resume/nested/education.html",
+                    controller: "ResumeCtrl"
+                })
+                .state('resume.all-in-one', {
+                    url: "/one-page",
+                    templateUrl: "app/resume/nested/all-in-one.html",
+                    controller: "ResumeCtrl"
+                })
                 .state('resume.others', {
                     url: "/{path:.*}",
-                    template: "404",
+                    templateUrl: "app/resume/nested/all-in-one.html",
                     controller: "ResumeCtrl"
                 })
             ;

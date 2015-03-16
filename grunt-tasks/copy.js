@@ -8,8 +8,24 @@ module.exports = function (grunt) {
                 files: [
                     {expand: true, cwd: 'src/', src: ['index.html'], dest: '<%=env.root%>/'},
                     /*  boostrap fonts and images*/
-                    {expand: true, cwd: 'src/static/vendor/bootstrap/fonts', src: ['**'], dest: '<%=env.root%>/static/fonts'},
-                    {expand: true, cwd: 'src/static/vendor/', src: ['**/*.png','**/*.jpg','**/*.gif'], dest: '<%=env.root%>/static/vendor'},
+                    {
+                        expand: true,
+                        cwd: 'src/static/vendor/font-awesome/fonts/',
+                        src: ['**'],
+                        dest: '<%=env.root%>/static/fonts'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src/static/vendor/bootstrap/fonts',
+                        src: ['**'],
+                        dest: '<%=env.root%>/static/fonts'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src/static/vendor/',
+                        src: ['**/*.png', '**/*.jpg', '**/*.gif'],
+                        dest: '<%=env.root%>/static/vendor'
+                    },
                 /** img stuff */
                     {expand: true, cwd: 'src/static/img', src: ['**'], dest: '<%=env.root%>/static/img'},
                     {expand: true, cwd: 'src/app/', src: ['**/*.html'], dest: '<%=env.root%>/app/'}
@@ -32,6 +48,5 @@ module.exports = function (grunt) {
                 ]
             }
         }
-
     );
 };

@@ -32,7 +32,7 @@
         app.controller("LoginCtrl", LoginCtrl);
 
         app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-            $urlRouterProvider.otherwise('about');
+            $urlRouterProvider.otherwise('home');
             $urlRouterProvider.when("", '/');
 
             $locationProvider
@@ -41,7 +41,8 @@
             $stateProvider
                 .state('home', {
                     url: "/",
-                    template: ""
+                    templateUrl: "app/home/index.html",
+                    controller: "HomeCtrl"
                 })
                 .state('about', {
                     url: "/about",

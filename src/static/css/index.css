@@ -19,6 +19,15 @@ body {
   background: linear-gradient(190deg, #d38312 10%, #a83279 90%);
   /* W3C */
 }
+#welcome {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  margin-top: -50px;
+  /* this is half the height of your div*/
+  margin-left: -100px;
+  /*this is half of width of your div*/
+}
 .fade {
   position: absolute;
   top: 0;
