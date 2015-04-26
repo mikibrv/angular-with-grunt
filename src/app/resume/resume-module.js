@@ -39,27 +39,27 @@
                     controller: "ResumeCtrl"
                 })
                 .state('resume.ebooking', {
-                    url: "/ebooking",
+                    url: "/ebooking-java-developer",
                     templateUrl: "app/resume/nested/exp-ebooking.html"
                 })
                 .state('resume.abcroisiere', {
-                    url: "/abcroisiere",
+                    url: "/ecommerce-java-developer",
                     templateUrl: "app/resume/nested/exp-abcroisiere.html"
                 })
                 .state('resume.internships', {
-                    url: "internship-coordinator",
+                    url: "/internship-coordinator",
                     templateUrl: "app/resume/nested/exp-internships.html"
                 })
                 .state("resume.teacher", {
-                    url: "web-development-teacher",
+                    url: "/web-development-teacher",
                     templateUrl: "app/resume/nested/exp-teaching.html"
                 })
                 .state("resume.freelancer", {
-                    url: "freelancer",
+                    url: "/freelancer",
                     templateUrl: "app/resume/nested/exp-freelancer.html"
                 })
                 .state("resume.tech", {
-                    url: "tech-support",
+                    url: "/tech-support",
                     templateUrl: "app/resume/nested/aol.html"
                 })
                 .state('resume.knowledge-sharing', {

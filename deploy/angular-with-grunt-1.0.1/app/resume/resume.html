@@ -1,0 +1,33 @@
+<div id="resume">
+
+    <div class="box">
+        <div class="row row-offcanvas row-offcanvas-left">
+
+            <span ng-include src="'app/resume/parts/sidebar.html'"></span>
+
+
+            <!-- main right col -->
+            <div class="column col-sm-10 col-xs-11" id="main">
+
+                <span ng-include src="'app/resume/parts/topbar.html'"></span>
+
+
+                <div class="padding">
+                    <div class="full col-sm-9">
+
+                        <!-- content -->
+                        <div class="row" id="resume-content">
+                            <div ui-view class="slide-pop">
+                                <span ng-include src="'app/resume/nested/index.html'"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

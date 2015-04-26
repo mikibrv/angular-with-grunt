@@ -1,0 +1,41 @@
+<div id="home">
+
+    <header>
+        <section id="hint">
+            <app-notification></app-notification>
+        </section>
+    </header>
+
+    <div id="content" about-slider>
+
+        <section
+                id="main"
+                ng-include src="'app/home/sections/short-info.html'"></section>
+
+        <section
+                data-x="450"
+                data-y="350"
+                ng-include src="'app/home/sections/technologies.html'"></section>
+
+        <section
+                data-x="-450"
+                data-y="350"
+                id="technologies"
+                ng-include src="'app/home/sections/technologies.html'"></section>
+
+    </div>
+
+    <footer>
+        <section id="social">
+            <a target="_blank" class="lk" title="Linkedin" href="https://www.linkedin.com/in/cseremiklos">
+                <img src="static/vendor/glyphicons_free/glyphicons_social/png/social-18-linked-in.png"/>
+            </a>
+            <a target="_blank" class="github" title="GitHub" href="https://github.com/mikibrv">
+                <img src="static/vendor/glyphicons_free/glyphicons_social/png/social-22-github.png"/>
+            </a>
+            <a target="_blank" class="fb" title="Facebook" href="https://www.facebook.com/Miki.bv16">
+                <img src="static/vendor/glyphicons_free/glyphicons_social/png/social-31-facebook.png"/>
+            </a>
+        </section>
+    </footer>
+</div>
