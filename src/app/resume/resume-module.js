@@ -38,6 +38,10 @@
                     templateUrl: "app/resume/nested/sharalike.html",
                     controller: "ResumeCtrl"
                 })
+                .state('resume.townite', {
+                    url: "/townite-java-developer",
+                    templateUrl: "app/resume/nested/exp-townite.html"
+                })
                 .state('resume.ebooking', {
                     url: "/ebooking-java-developer",
                     templateUrl: "app/resume/nested/exp-ebooking.html"
