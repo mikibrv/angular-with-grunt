@@ -33,6 +33,11 @@
                     templateUrl: "app/resume/nested/experience.html",
                     controller: "ResumeCtrl"
                 })
+                .state('resume.netcentric', {
+                    url: "/software-engineer-netcentric",
+                    templateUrl: "app/resume/nested/netcentric.html",
+                    controller: "ResumeCtrl"
+                })
                 .state('resume.sharalike', {
                     url: "/back-end-developer-sharalike",
                     templateUrl: "app/resume/nested/sharalike.html",
