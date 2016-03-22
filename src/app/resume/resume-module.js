@@ -35,12 +35,12 @@
                 })
                 .state('resume.netcentric', {
                     url: "/software-engineer-netcentric",
-                    templateUrl: "app/resume/nested/netcentric.html",
+                    templateUrl: "app/resume/nested/exp-netcentric.html",
                     controller: "ResumeCtrl"
                 })
                 .state('resume.sharalike', {
                     url: "/back-end-developer-sharalike",
-                    templateUrl: "app/resume/nested/sharalike.html",
+                    templateUrl: "app/resume/nested/exp-sharalike.html",
                     controller: "ResumeCtrl"
                 })
                 .state('resume.townite', {
@@ -69,7 +69,7 @@
                 })
                 .state("resume.tech", {
                     url: "/tech-support",
-                    templateUrl: "app/resume/nested/aol.html"
+                    templateUrl: "app/resume/nested/exp-tech-support.html"
                 })
                 .state('resume.knowledge-sharing', {
                     url: "/knowledge-sharing",

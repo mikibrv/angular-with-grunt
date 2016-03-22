@@ -1,0 +1,158 @@
+#cube-wrapper {
+  display: none;
+  /*colors*/
+}
+#cube-wrapper .cube-bg-color {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+#cube-wrapper .cube {
+  opacity: 0.3;
+  padding: 2px;
+  width: 1000px;
+  height: 1000px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #7f0000;
+  border: 1px dashed rgba(255, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box;
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+#cube-wrapper .cube.active {
+  opacity: 1;
+}
+#cube-wrapper .center-cube {
+  width: 250px;
+  height: 250px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px dashed #7f0000;
+  border: 1px dashed rgba(255, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  /* for Safari */
+  background-clip: padding-box;
+  /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+#cube-wrapper .center-cube img {
+  width: 100%;
+  height: 100%;
+}
+#cube-wrapper .front-bg {
+  background-color: #428bca;
+  background: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#3071a9));
+  background: -webkit-linear-gradient(top, #428bca, #3071a9);
+  background: -moz-linear-gradient(top, #428bca, #3071a9);
+  background: -ms-linear-gradient(top, #428bca, #3071a9);
+  background: -o-linear-gradient(top, #428bca, #3071a9);
+}
+#cube-wrapper .left-bg {
+  background-color: #5bc0de;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5bc0de), to(#2390b0));
+  background: -webkit-linear-gradient(top, #5bc0de, #2390b0);
+  background: -moz-linear-gradient(top, #5bc0de, #2390b0);
+  background: -ms-linear-gradient(top, #5bc0de, #2390b0);
+  background: -o-linear-gradient(top, #5bc0de, #2390b0);
+}
+#cube-wrapper .right-bg {
+  background-color: #5cb85c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#357935));
+  background: -webkit-linear-gradient(top, #5cb85c, #357935);
+  background: -moz-linear-gradient(top, #5cb85c, #357935);
+  background: -ms-linear-gradient(top, #5cb85c, #357935);
+  background: -o-linear-gradient(top, #5cb85c, #357935);
+}
+#cube-wrapper .top-bg {
+  background-color: #f0ad4e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0ad4e), to(#c77c11));
+  background: -webkit-linear-gradient(top, #f0ad4e, #c77c11);
+  background: -moz-linear-gradient(top, #f0ad4e, #c77c11);
+  background: -ms-linear-gradient(top, #f0ad4e, #c77c11);
+  background: -o-linear-gradient(top, #f0ad4e, #c77c11);
+}
+#cube-wrapper .bottom-bg {
+  background-color: #d9534f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d9534f), to(#a02622));
+  background: -webkit-linear-gradient(top, #d9534f, #a02622);
+  background: -moz-linear-gradient(top, #d9534f, #a02622);
+  background: -ms-linear-gradient(top, #d9534f, #a02622);
+  background: -o-linear-gradient(top, #d9534f, #a02622);
+}
+#cube-wrapper .back-bg {
+  background-color: #20B2AA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#20B2AA), to(#188781));
+  background: -webkit-linear-gradient(top, #20B2AA, #188781);
+  background: -moz-linear-gradient(top, #20B2AA, #188781);
+  background: -ms-linear-gradient(top, #20B2AA, #188781);
+  background: -o-linear-gradient(top, #20B2AA, #188781);
+}
+#graph {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  overflow: visible;
+}
+/*
+#home {
+  height: 100vh;
+
+  #top-section {
+    height: 20%;
+
+     .gradient(0deg, #3CA55C 10%, #B5AC49 90%);
+
+    .gradient(0deg, #F1F2B5 20%, #135058 80%);
+  }
+
+  #middle-section {
+
+    height: 40%;
+    .gradient(0deg, #F1F2B5 40%, #F1F2B5 60%);
+    a {
+
+    }
+
+    #home-content {
+
+      padding: 10px;
+      font-weight: bold;
+      display: inline-block;
+
+      border-right: 30px solid transparent;
+      border-left: 30px solid transparent;
+      border-bottom: 30px solid #4c4c4c;
+
+      height: 0;
+      line-height: 50px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  #bottom-section {
+    height: 40%;
+
+    .gradient(180deg, #348F50 10%, #56B4D3 90%);
+    .gradient(180deg, #F1F2B5 20%, #135058 80%);
+  }
+
+}
+*/

@@ -1,0 +1,63 @@
+/* latin */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(http://fonts.gstatic.com/s/specialelite/v6/9-wW4zu3WNoD5Fjka35JmzxObtw73-qQgbr7Be51v5c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+  height: 100vh;
+  background: -webkit-linear-gradient(190deg, #D38312 10%, #A83279 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(190deg, #D38312 10%, #A83279 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(190deg, #D38312 10%, #A83279 90%);
+  /* IE10 */
+  background: -o-linear-gradient(190deg, #D38312 10%, #A83279 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(190deg, #D38312 10%, #A83279 90%);
+  /* W3C */
+}
+#welcome {
+  text-align: center;
+  padding-top: 10%;
+}
+#welcome img {
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 1;
+}
+.fade.ng-enter,
+.fade.ng-leave {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.fade.ng-enter {
+  opacity: 0;
+}
+.fade.ng-enter-active {
+  opacity: 1;
+}
+.fade.ng-leave {
+  opacity: 1;
+}
+.fade.ng-leave-active {
+  opacity: 0;
+}
